@@ -63,7 +63,7 @@ function loadMovieDetails(){
  });
 }
 
-//Display du film sélectionné avec notre code HTML
+//Display du film sélectionné avec notre code HTML en rcupérant les données par key valeur dans le json
 function displayMovieDetails(details){
  resultGrid.innerHTML = 
   `
