@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Movie Search Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+        <div class="container">
+          <p>Trouve<span>Ton</span><pan>Film</pan></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!---Conteneur de recherche-->
+  <div class="search-container">
+    <div class="search-element">
+      <h3>Rechercher:</h3>
+      <input type="text" class="form-control" placeholder="Il était une fois dans..." id="moviesearch" onkeyup="findMovies()">
+      <div class="search-list" id="search-list">
+        <!--<div class="search-list-item">
+          <div class="search-item-thumbnail">
+            <img src="gardiengax.jpg">
+          </div>
+          <div class="search-item-info">
+              <h3>Guardians of the Galaxy vol2</h3>
+              <p>2017</p>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+  <!---Conteneur de résultat-->
+  <div class="container" style="background-color: var(--md-dark-color)">
+    <div class="result-container">
+      <div class="result-grid" id="result-grid">
+
+        <!--Template du container result qui affiche le film sélectionné-->
+
+        <div class="movie-poster">
+          <img src="gardiengax.jpg" alt="movie poster">
+        </div>
+        <div class="movie-info">
+          <h3 class="movie-title">Les gardiens de la galaxie Vol.2</h3>
+          <ul class="movie-misc-info">
+            <li class="year">Année : 2017</li>
+            <li class="rated">Evaluation: PG 13</li>
+          </ul>
+          <p class="genre"> <b>Genre:</b> Action, Aventure, Comedie</p>
+          <p class="writer"><b>Réalisateur(s):</b> James Gunn le pistolet</p>
+          <p class="actors"><b>Acteurs:</b> Chris Patt de chat et d'autre gens</p>
+          <p class="plot"><b>Synopsis:</b> Les gardiens de l'espace, ils ont pas de combinaison, pourtant ils survivent... On les retrouvent 
+          une nouvelle fois dans leurs aventures, dans lesque ils vont tirer avec des laser, se battre, faire des blagues et voilà c'est fini
+        le fim est super</p>
+        </div>
+        <!--Fin du template -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
