@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 :root{
   --md-dark-color: #1d1d1d;
   --dark-color: #171717;
@@ -25,12 +23,12 @@ img{
   display: block;
 }
 
-.wrapper{
+.backg{
   min-width: 1200px;
   background-color: var(--dark-color);
 }
 
-.wrapper .container{
+.backg .container{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -44,18 +42,18 @@ img{
   justify-content: center;
 }
 
-.logo{
+.slogan{
   padding: 1rem 0;
   border-bottom: 1px solid var(--light-dark-color);
 }
 
-.logo p{
+.slogan p{
   font-size: 4rem;
   color: #fff;
   font-weight: bold;
 }
 
-.logo p span{
+.slogan p span{
   color: green;
 }
 
@@ -217,61 +215,5 @@ img{
 }
 
 
-
-@media(max-width: 450px){
-  .logo p{
-    font-size: 1.4rem;
-  }
-  .search-element .form-control{
-    width: 90%;
-    margin: 0 auto;
-    padding: 0.5rem 1rem; 
-  }
-  .search-element h3{
-    font-size: 1.4rem;
-  }
-  .search-list{
-    width: 90%;
-    right: 50%;
-    transform: translateX(50%);
-  }
-  .search-list .search-list-item{
-    width: 100%;
-  }
-  .movie-misc-info{
-    flex-direction: column; 
-  }
-  .movie-misc-info li:nth-child(2){
-    margin: 0.8rem 0;
-  }
-}
-
-@media(min-width: 800px){
-  .search-element{
-    flex-direction: row;
-  }
-  .search-element h3{
-    margin-bottom: 0;
-  }
-  .result-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .movie-info{
-    text-align: left;
-    padding-top: 0;
-  }
-  .movie-info .movie-misc-info{
-    justify-content: flex-start;
-    padding-left: 0;
-  }
-  .movie-info .plot{
-    margin-left: 0;
-  }
-  .movie-info .writer{
-    padding-left: 0;
-    margin-left: 0;
-  }
-}
 
 
